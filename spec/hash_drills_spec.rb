@@ -64,7 +64,17 @@ describe 'ketogenic_ingredients' do
     end
 end
 
-describe 'mediterranean_ingredients' do
+describe '{
+  :sweets => ["soda", "candy", "potato chips"],
+  :protein => {
+      :meat => ["chicken", "fish", "steak"],
+      :other => ["eggs", "nuts","beans"]
+  },
+  :dairy => ["milk", "yogurt", "cheese"],
+  :fruits => ["bananas", "oranges", "apples", "grapes"],
+  :vegetables => ["cabbage", "broccoli", "tomatoes", "carrots"],
+  :grains => ["crackers", "rice", "bread", "pasta", "cereal"]
+}' do
 
     it 'exists' do
       expect { mediterranean_ingredients }.not_to raise_error
